@@ -1,8 +1,5 @@
 {
-  "name": "CUDA GPU Workspace",
-  "image": "nvidia/cuda:12.4.0-base-ubuntu22.04",
-  "runArgs": [
-    "--gpus=all"
-  ],
-  "postCreateCommand": "apt update && apt install -y git build-essential"
+  "name": "GPU Workspace",
+  "image": "ubuntu:22.04",
+  "postCreateCommand": "apt update && apt install -y curl git build-essential"
 }
